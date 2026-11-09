@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Соседи, потише! Инициативный дизайн-концепт спецпроекта Циана и Яндекс Музыки.">
+  <title>Соседи, потише! · Циан × Яндекс Музыка</title>
+  <link rel="icon" href="assets/plan-music.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="site.js"></script>
+</head>
+<body>
+  <header class="site-header shell">
+    <div class="brand-lockup">
+      <img class="cian-logo" src="assets/brand-cian.png" alt="Циан">
+      <span aria-hidden="true">×</span>
+      <img class="music-logo" src="assets/brand-music.svg" alt="Яндекс Музыка">
+    </div>
+    <a class="button compact header-cta" href="#story">Участвовать <img src="assets/arrow-white.svg" alt=""></a>
+  </header>
+  <main>
+    <section class="hero shell two-col" aria-labelledby="hero-title">
+      <div class="hero-copy" data-motion>
+        <h1 id="hero-title">
+          <span class="hero-line"><span>СОСЕДИ,</span></span>
+          <span class="hero-line"><span>ПОТИШЕ!</span></span>
+        </h1>
+        <p>Расскажите историю о&nbsp;соседях.<br>Приз — оплата месяца аренды на&nbsp;сумму до&nbsp;80&nbsp;000&nbsp;₽.</p>
+        <a class="button" href="#story">Участвовать <img src="assets/arrow-white.svg" alt=""></a>
+      </div>
+      <figure class="apartment" data-motion>
+        <div class="plan-stage">
+          <svg class="floor-plan" viewBox="0 0 628 435" role="img" aria-label="План квартиры. В одной комнате человек пытается уснуть, за стеной играет музыка.">
+            <image class="plan-walls" href="assets/plan-walls.svg" width="628" height="502.4"/>
+            <g class="plan-dimensions">
+              <image href="assets/plan-width.svg" x="77.6" y="20.19" width="473.243" height="31.4"/>
+              <image href="assets/plan-tick.svg" x="72.8" y="26.6" width="9.61" height="9.61"/>
+              <image href="assets/plan-tick.svg" x="309.6" y="26.6" width="9.61" height="9.61"/>
+              <image href="assets/plan-tick.svg" x="546" y="26.6" width="9.61" height="9.61"/>
+              <image href="assets/plan-height.svg" x="40.37" y="64.6" width="25.569" height="317.13"/>
+              <image href="assets/plan-height.svg" x="568.79" y="64.6" width="25.569" height="317.13"/>
+              <image href="assets/plan-side-tick.svg" x="45.43" y="60.24" width="9.61" height="9.61"/>
+              <image href="assets/plan-side-tick.svg" x="45.43" y="376.48" width="9.61" height="9.61"/>
+              <image href="assets/plan-side-tick.svg" x="573.85" y="60.24" width="9.61" height="9.61"/>
+              <image href="assets/plan-side-tick.svg" x="573.85" y="376.48" width="9.61" height="9.61"/>
+              <g fill="#182b4e" font-size="13.46" text-anchor="middle">
+                <text x="195.8" y="24">5,00 м</text>
+                <text x="432.65" y="24">5,00 м</text>
+                <text x="35" y="223" transform="rotate(-90 35 223)">7,60 м</text>
+                <text x="587" y="224" transform="rotate(90 587 224)">7,60 м</text>
+              </g>
+            </g>
+            <image class="plan-character" href="assets/plan-character.svg" width="628" height="502.4"/>
+            <g class="plan-clock">
+              <rect x="228.32" y="129.64" width="55.174" height="28.26" rx="7.177" fill="#101114"/>
+              <text x="255.91" y="149" fill="white" font-size="15.25" text-anchor="middle">02:17</text>
+            </g>
+            <g class="plan-waves">
+              <image class="player-waves" href="assets/plan-waves.svg" width="628" height="502.4"/>
+            </g>
+            <image class="plan-speaker" href="assets/plan-speaker.svg" x="7.85" y="19.29" width="628" height="502.4"/>
+            <g transform="translate(0 17.94)">
+              <g class="plan-player">
+                <rect x="329.7" y="284.84" width="208.586" height="50.689" rx="11.214" fill="#101114"/>
+                <image href="assets/plan-music.svg" x="338.68" y="292.9" width="33.66" height="33.56"/>
+                <image href="assets/plan-pause.svg" x="379.94" y="295.61" width="23.774" height="23.774"/>
+                <path class="player-play" d="M389 301.3 396.4 307.3 389 313.3Z" fill="#101114"/>
+                <g class="player-pause" fill="#101114">
+                  <rect x="387.57" y="302.34" width="2.691" height="9.869"/>
+                  <rect x="392.95" y="302.34" width="2.691" height="9.869"/>
+                </g>
+                <text class="player-title" x="410.89" y="309" fill="white" font-size="13.01" font-weight="700">Соседская волна</text>
+                <rect class="player-track" x="410.89" y="321.63" width="115.731" height="4.037" rx="1.794" fill="#777"/>
+                <rect class="player-progress" x="410.89" y="321.63" width="0" height="4.037" rx="1.794" fill="#fed42b"/>
+                <image class="player-knob" href="assets/plan-knob.svg" x="405.73" y="318.49" width="10.317" height="10.317"/>
+              </g>
+            </g>
+          </svg>
+          <button class="plan-toggle" type="button" aria-label="Воспроизвести «Соседская волна»" hidden></button>
+          <audio id="neighbor-wave" src="assets/neighbor-wave.mp3" preload="none"></audio>
+        </div>
+        <p class="player-error" role="status" hidden></p>
+        <figcaption>
+          <div><strong>1-комн. квартира · 38 м²</strong><p>Плейлист соседа — в подарок</p></div>
+          <button class="apartment-heart" type="button" aria-label="В избранное" aria-pressed="false">
+            <svg viewBox="0 0 34.5964 30.8233" aria-hidden="true" focusable="false">
+              <path d="M17.315 6.55122C4.75505 -6.90593 -5.11352 10.1398 6.54933 19.1112L17.315 28.9798L27.6322 19.1112C40.1922 8.79407 29.4265 -6.90593 17.315 6.55122Z" stroke-width="2.69143"/>
+            </svg>
+          </button>
+        </figcaption>
+      </figure>
+    </section>
+    <section class="noise shell" aria-labelledby="noise-title">
+      <h2 id="noise-title">У&nbsp;каждого дома <span>свои истории.</span></h2>
+      <ol class="noises">
+        <li>
+          <span class="noise-number" aria-hidden="true">01</span>
+          <div><h3>Соло на&nbsp;дрели</h3><p>Бабушка попросила помочь повесить полку. Через час вы уже выбирали обои.</p></div>
+          <img src="assets/noise-drill.svg" alt="">
+        </li>
+        <li>
+          <span class="noise-number" aria-hidden="true">02</span>
+          <div><h3>Хит на&nbsp;весь подъезд</h3><p>Вы уже знаете песню наизусть, хотя&nbsp;ни&nbsp;разу её не&nbsp;включали.</p></div>
+          <img src="assets/noise-speaker.svg" alt="">
+        </li>
+        <li>
+          <span class="noise-number" aria-hidden="true">03</span>
+          <div><h3>Танцы со&nbsp;шкафом</h3><p>Сосед пришёл помочь с&nbsp;переездом. Шкаф пролез в&nbsp;дверь только с&nbsp;третьей попытки.</p></div>
+          <img src="assets/noise-furniture.svg" alt="">
+        </li>
+      </ol>
+      <a class="posters-jump" href="#posters">Выбрать объявление для&nbsp;подъезда <img src="assets/arrow-blue.svg" alt=""></a>
+    </section>
+    <section class="prize" aria-labelledby="prize-title">
+      <div class="shell">
+        <div class="prize-card">
+          <h2 id="prize-title">Месяц аренды —<br><span>за&nbsp;наш счёт</span></h2>
+          <div class="prize-amount" data-motion>
+            <p>до <strong>80&nbsp;000</strong> <b>₽</b></p>
+          </div>
+          <div class="prize-copy">
+            <p>Ждём истории о&nbsp;соседях — смешные, тёплые и&nbsp;неожиданные.</p>
+            <a class="button" href="#story">Рассказать историю <img src="assets/arrow-white.svg" alt=""></a>
+            <button class="text-button" type="button" data-dialog="terms">Условия акции</button>
+          </div>
+        </div>
+        <ol class="steps">
+          <li><span>1</span><div><h3>Расскажите историю</h3><p>До&nbsp;500 символов,<br>без&nbsp;имён и&nbsp;адресов.</p></div></li>
+          <li><span>2</span><div><h3>Оставьте почту</h3><p>Напишем вам,<br>если&nbsp;вы выиграете.</p></div></li>
+          <li><span>3</span><div><h3>Дождитесь 5&nbsp;декабря</h3><p>Победителя выберем<br>случайным образом.</p></div></li>
+        </ol>
+      </div>
+    </section>
+    <section class="chat" id="chat" aria-labelledby="chat-title">
+      <div class="chat-loop-bleed" aria-hidden="true">
+        <svg class="chat-loop" viewBox="0 0 1091.83 756.791" focusable="false">
+          <path pathLength="1" fill="none" d="M15.1854 740.872C100.31 659.669 568.143 712.956 745.464 491.384C891.633 308.393 744.756 37.0783 561.445 22.7478C399.7 9.51959 256.447 174.76 286.4 331.294C308.281 409.54 394.38 531.246 536.184 528.841C645.422 526.989 786.908 493.247 913.928 418.729C971.862 384.741 1038.15 335.127 1073.86 284.598l300 -425" stroke-width="44" stroke="#FED42B"/>
+        </svg>
+      </div>
+      <div class="shell chat-grid two-col">
+        <div class="chat-copy">
+          <h2 id="chat-title">Было такое?</h2>
+          <p>Напишите соседям до семи слов.</p>
+        </div>
+        <div class="phone" data-motion>
+          <div class="phone-screen">
+            <div class="phone-status"><strong>09:41</strong><img src="assets/chat-status.svg" alt=""></div>
+            <div class="phone-header">
+              <img class="phone-back" src="assets/chat-back.svg" alt="">
+              <img class="phone-avatar" src="assets/chat-avatar.svg" alt="">
+              <div><strong>Наш дом</strong><small>42 участника</small></div>
+              <img class="phone-actions" src="assets/chat-actions.svg" alt="">
+            </div>
+            <ol class="messages" aria-label="Переписка в домовом чате" aria-live="polite">
+              <li class="message-date">СЕГОДНЯ</li>
+              <li><b>Марина</b><p>Соседи, есть щепотка соли?</p><time>09:36</time></li>
+              <li><b>Сергей</b><p>Есть. Уже несу.</p><time>09:37</time></li>
+              <li class="message-greeting">
+                <b>Зоя Петровна</b>
+                <picture>
+                  <source media="(prefers-reduced-motion: reduce)" srcset="assets/chat-apple-spas.jpg">
+                  <img src="assets/chat-apple-spas.gif" width="380" height="281" loading="lazy" alt="Поздравляю с Яблочным Спасом!">
+                </picture>
+                <time>09:37</time>
+              </li>
+            </ol>
+            <form class="phone-input" hidden>
+              <label class="phone-compose">
+                <input type="text" aria-label="Сообщение в домовой чат" placeholder="Ответить" enterkeyhint="send" maxlength="140" required>
+                <span class="phone-placeholder" aria-hidden="true">Ответить<span>...</span></span>
+              </label>
+              <button class="phone-send" type="submit" aria-label="Отправить сообщение">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5m-6 6 6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </form>
+          </div>
+          <img class="phone-frame" src="assets/phone-frame.png" alt="">
+        </div>
+        <a class="chat-link" href="#story">Рассказать историю →</a>
+      </div>
+    </section>
+    <section class="story shell two-col" id="story" aria-labelledby="story-title" tabindex="-1">
+      <div class="story-copy">
+        <h2 id="story-title">А&nbsp;у&nbsp;вас<br>как было?</h2>
+        <p>Расскажите коротко.<br>Без&nbsp;имён и&nbsp;адресов.</p>
+      </div>
+      <form class="story-form" id="story-form">
+        <div class="field">
+          <label for="story-text">Ваша история</label>
+          <textarea id="story-text" placeholder="Однажды у&nbsp;нас дома…" rows="6" maxlength="500" required aria-describedby="story-count"></textarea>
+          <small id="story-count">0 / 500</small>
+        </div>
+        <div class="field">
+          <label for="email">Почта</label>
+          <input id="email" type="email" placeholder="mail@example.ru" required autocomplete="email" aria-describedby="email-help">
+          <small id="email-help">Напишем сюда, если&nbsp;выиграете.</small>
+        </div>
+        <label class="consent"><input type="checkbox" required> <span>Принимаю условия акции и&nbsp;согласен на&nbsp;обработку данных</span></label>
+        <button class="button" type="submit">Отправить историю <img src="assets/arrow-white.svg" alt=""></button>
+      </form>
+      <section class="story-confirmation" aria-labelledby="confirmation-title" tabindex="-1" hidden>
+        <h3 id="confirmation-title">Спасибо за&nbsp;историю!</h3>
+        <p>Итоги розыгрыша — 5&nbsp;декабря.</p>
+        <a class="button" href="#posters">Выбрать объявление <img src="assets/arrow-white.svg" alt=""></a>
+        <small>Демо: история и&nbsp;почта остались в&nbsp;браузере.</small>
+      </section>
+    </section>
+    <section class="posters" id="posters" aria-labelledby="posters-title" tabindex="-1">
+      <div class="shell">
+        <h2 id="posters-title">Можно просто<br>повесить объявление</h2>
+        <p class="posters-intro">Скачивайте, даже если&nbsp;не&nbsp;участвуете в&nbsp;розыгрыше.</p>
+        <div class="poster-grid">
+          <article>
+            <div class="poster poster-loud" id="poster-loud" data-motion>
+              <h3><span>БАС</span><small>НОСЛОВНО</small><br>ГРОМКО</h3>
+              <div class="poster-art"><img src="assets/poster-speaker.png" alt=""></div>
+              <p>Пожалуйста, сделайте музыку тише.<br>Слышно через стену.</p>
+              <div class="poster-logos"><img src="assets/poster-cian-white.svg" alt="Циан"><span>×</span><img src="assets/poster-music-white.svg" alt="Яндекс Музыка"></div>
+            </div>
+            <div class="poster-downloads"><a href="posters/bas.pdf" download>Для печати · PDF ↓</a><a href="posters/bas.png" download>Для чата · PNG ↓</a></div>
+          </article>
+          <article>
+            <div class="poster poster-drill" id="poster-drill" data-motion>
+              <h3><span>СОЛО</span><br>НА&nbsp;ДРЕЛИ</h3>
+              <div class="poster-art"><img src="assets/poster-drill.png" alt=""></div>
+              <p>Пожалуйста, делайте перерывы<br>в&nbsp;ремонте.</p>
+              <div class="poster-logos"><img src="assets/poster-cian-blue.svg" alt="Циан"><span>×</span><img src="assets/poster-music-paper.svg" alt="Яндекс Музыка"></div>
+            </div>
+            <div class="poster-downloads"><a href="posters/drill.pdf" download>Для печати · PDF ↓</a><a href="posters/drill.png" download>Для чата · PNG ↓</a></div>
+          </article>
+          <article>
+            <div class="poster poster-table" id="poster-table" data-motion>
+              <h3><span>ДОМА —</span><br><span class="poster-title-line">В&nbsp;ТАПОЧКАХ</span></h3>
+              <div class="poster-art"><img src="assets/poster-table.png" alt=""></div>
+              <p>Пожалуйста, двигайте<br>мебель днём.</p>
+              <div class="poster-logos"><img src="assets/poster-cian-blue.svg" alt="Циан"><span>×</span><img src="assets/poster-music-yellow.svg" alt="Яндекс Музыка"></div>
+            </div>
+            <div class="poster-downloads"><a href="posters/table.pdf" download>Для печати · PDF ↓</a><a href="posters/table.png" download>Для чата · PNG ↓</a></div>
+          </article>
+          <article>
+            <div class="poster poster-pie" id="poster-pie" data-motion>
+              <h3><span>СПАСИБО</span><br><span class="poster-title-line">ЗА&nbsp;ПИРОГИ</span></h3>
+              <div class="poster-art"><img src="assets/poster-pie.png" alt="" loading="lazy" decoding="async"></div>
+              <p>С&nbsp;вами дома теплее.</p>
+              <div class="poster-logos"><img src="assets/poster-cian-blue.svg" alt="Циан"><span>×</span><img src="assets/poster-music-paper.svg" alt="Яндекс Музыка"></div>
+            </div>
+            <div class="poster-downloads"><a href="posters/pie.pdf" download>Для печати · PDF ↓</a><a href="posters/pie.png" download>Для чата · PNG ↓</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="partners" id="partners" aria-label="Партнёры проекта">
+      <div class="shell two-col">
+        <a class="partner partner-estate" href="https://www.cian.ru/" aria-label="Найти квартиру на Циане">
+          <div class="partner-copy">
+            <div class="partner-brand"><img class="partner-logo" src="assets/partner-cian.svg" alt="Циан"></div>
+            <h3>Найти квартиру</h3>
+            <p>Посмотрите, что сдаётся рядом.</p>
+          </div>
+          <span class="partner-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+        <a class="partner partner-streaming" href="https://music.yandex.ru/" aria-label="Открыть Яндекс Музыку">
+          <div class="partner-copy">
+            <div class="partner-brand"><img class="partner-logo" src="assets/poster-music-yellow.svg" alt="Яндекс Музыка"></div>
+            <h3>Поймать волну</h3>
+            <p>Музыка, которую выбрали вы.</p>
+          </div>
+          <span class="partner-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+      </div>
+    </section>
+    <section class="faq shell" aria-labelledby="faq-title">
+      <div class="faq-grid">
+        <h2 id="faq-title">Если<br>коротко</h2>
+        <div class="answers">
+          <details open name="faq">
+            <summary>Как выберут победителя?<span class="faq-mark" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Случайным образом среди&nbsp;участников, выполнивших условия акции.</p></div>
+          </details>
+          <details name="faq">
+            <summary>А&nbsp;если у&nbsp;меня добрые соседи?<span class="faq-mark" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Расскажите и&nbsp;о&nbsp;них! Может, соседка угощает вас пирогами или&nbsp;присматривает за&nbsp;котом, пока&nbsp;вы в&nbsp;отъезде.</p></div>
+          </details>
+          <details name="faq">
+            <summary>Какую сумму оплатят?<span class="faq-mark" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>До&nbsp;80&nbsp;000&nbsp;₽ за&nbsp;месяц аренды.</p></div>
+          </details>
+          <details name="faq">
+            <summary>Когда объявят результаты?<span class="faq-mark" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>5&nbsp;декабря. Победителю напишут на&nbsp;почту.</p></div>
+          </details>
+          <details name="faq">
+            <summary>Можно скачать постеры без&nbsp;участия?<span class="faq-mark" aria-hidden="true"></span></summary>
+            <div class="faq-answer"><p>Да. Постеры доступны в&nbsp;PDF и&nbsp;PNG.</p></div>
+          </details>
+        </div>
+      </div>
+      <p class="farewell">Кстати, вы тоже чей-то сосед.</p>
+    </section>
+  </main>
+  <footer class="footer shell">
+    <div class="brand-lockup">
+      <img class="cian-logo" src="assets/brand-cian.png" alt="Циан">
+      <span aria-hidden="true">×</span>
+      <img class="music-logo" src="assets/brand-music.svg" alt="Яндекс Музыка">
+    </div>
+    <div class="footer-links">
+      <button class="text-button" type="button" data-dialog="terms">Условия акции</button>
+      <button class="text-button" type="button" data-dialog="privacy">Обработка данных</button>
+    </div>
+  </footer>
+  <dialog id="terms" aria-labelledby="terms-title">
+    <h2 id="terms-title">Условия акции</h2>
+    <p>Это портфолио-концепт. В&nbsp;сценарии спецпроекта участники делятся историей о&nbsp;соседях до&nbsp;30&nbsp;ноября. 5&nbsp;декабря случайным образом выбирают победителя, которому оплачивают месяц аренды на&nbsp;сумму до&nbsp;80&nbsp;000&nbsp;₽.</p>
+    <form method="dialog"><button class="button">Закрыть</button></form>
+  </dialog>
+  <dialog id="privacy" aria-labelledby="privacy-title">
+    <h2 id="privacy-title">Обработка данных</h2>
+    <p>В&nbsp;демонстрационной версии история и&nbsp;почта остаются в&nbsp;полях формы до&nbsp;закрытия или&nbsp;обновления страницы.</p>
+    <form method="dialog"><button class="button">Закрыть</button></form>
+  </dialog>
+</body>
+</html>

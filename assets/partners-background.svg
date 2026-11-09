@@ -1,0 +1,19 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="1440" height="372" viewBox="0 0 1440 372" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="&#208;&#158;&#208;&#177;&#209;&#137;&#208;&#184;&#208;&#185; &#209;&#132;&#208;&#190;&#208;&#189; / &#208;&#188;&#209;&#143;&#208;&#179;&#208;&#186;&#208;&#184;&#208;&#185; &#209;&#132;&#208;&#184;&#209;&#128;&#208;&#188;&#208;&#181;&#208;&#189;&#208;&#189;&#209;&#139;&#208;&#185; &#209;&#134;&#208;&#178;&#208;&#181;&#209;&#130;" clip-path="url(#clip0_0_426)">
+<path id="Vector" d="M390 740C748.985 740 1040 529.574 1040 270C1040 10.4262 748.985 -200 390 -200C31.0149 -200 -260 10.4262 -260 270C-260 529.574 31.0149 740 390 740Z" fill="url(#paint0_radial_0_426)"/>
+<path id="Vector_2" d="M1340 660C1605.1 660 1820 485.391 1820 270C1820 54.6089 1605.1 -120 1340 -120C1074.9 -120 860 54.6089 860 270C860 485.391 1074.9 660 1340 660Z" fill="url(#paint1_radial_0_426)"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_0_426" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(390 270) scale(650 470)">
+<stop stop-color="#005BFF" stop-opacity="0.22"/>
+<stop offset="1" stop-color="#005BFF" stop-opacity="0"/>
+</radialGradient>
+<radialGradient id="paint1_radial_0_426" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1340 270) scale(480 390)">
+<stop stop-color="#FED42B" stop-opacity="0.045"/>
+<stop offset="1" stop-color="#FED42B" stop-opacity="0"/>
+</radialGradient>
+<clipPath id="clip0_0_426">
+<rect width="1440" height="372" fill="white"/>
+</clipPath>
+</defs>
+</svg>
